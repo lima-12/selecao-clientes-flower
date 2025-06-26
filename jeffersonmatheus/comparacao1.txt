@@ -1,0 +1,130 @@
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base 
+➜ flwr run
+Loading project configuration... 
+Success
+INFO :      Starting Flower ServerApp, config: num_rounds=3, no round_timeout
+INFO :      
+INFO :      [INIT]
+INFO :      Using initial global parameters provided by strategy
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :      
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 2 clients (out of 6)
+(ClientAppActor pid=70363) Using the latest cached version of the dataset since uoft-cs/cifar10 couldn't be found on the Hugging Face Hub
+(ClientAppActor pid=70363) Found the latest cached dataset configuration 'plain_text' at /Users/lima/.cache/huggingface/datasets/uoft-cs___cifar10/plain_text/0.0.0/0b2714987fa478483af9968de7c934580d0bb9a2 (last modified on Tue May 13 15:27:07 2025).
+(ClientAppActor pid=70363) /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future.
+(ClientAppActor pid=70363) For the old behavior, usually:
+(ClientAppActor pid=70363)     np.array(value).astype(dtype)
+(ClientAppActor pid=70363) will give the desired result (the cast overflows).
+(ClientAppActor pid=70363)   nparray = np.array(values, dtype=np_dt)
+INFO :      aggregate_fit: received 2 results and 0 failures
+WARNING :   No fit_metrics_aggregation_fn provided
+INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
+(ClientAppActor pid=70364) Using the latest cached version of the dataset since uoft-cs/cifar10 couldn't be found on the Hugging Face Hub
+(ClientAppActor pid=70364) Found the latest cached dataset configuration 'plain_text' at /Users/lima/.cache/huggingface/datasets/uoft-cs___cifar10/plain_text/0.0.0/0b2714987fa478483af9968de7c934580d0bb9a2 (last modified on Tue May 13 15:27:07 2025).
+(ClientAppActor pid=70362) /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future. [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)
+(ClientAppActor pid=70362) For the old behavior, usually: [repeated 2x across cluster]
+(ClientAppActor pid=70362)     np.array(value).astype(dtype) [repeated 2x across cluster]
+(ClientAppActor pid=70362) will give the desired result (the cast overflows). [repeated 2x across cluster]
+(ClientAppActor pid=70362)   nparray = np.array(values, dtype=np_dt) [repeated 2x across cluster]
+INFO :      aggregate_evaluate: received 6 results and 0 failures
+INFO :      
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 2 clients (out of 6)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_evaluate: received 6 results and 0 failures
+INFO :      
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 2 clients (out of 6)
+INFO :      aggregate_fit: received 2 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_evaluate: received 6 results and 0 failures
+INFO :      
+INFO :      [SUMMARY]
+INFO :      Run finished 3 round(s) in 311.50s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.7993527054786682
+INFO :                  round 2: 1.544298489888509
+INFO :                  round 3: 1.4291387001673381
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.40411917368570965),
+INFO :                        (2, 0.45310937861601513),
+INFO :                        (3, 0.49780042966206867)]}
+INFO :      
+(ClientAppActor pid=70361) /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future.
+(ClientAppActor pid=70361) For the old behavior, usually:
+(ClientAppActor pid=70361)     np.array(value).astype(dtype)
+(ClientAppActor pid=70361) will give the desired result (the cast overflows).
+(ClientAppActor pid=70361)   nparray = np.array(values, dtype=np_dt)
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||| aqui eu testei com o round-robin (escolhendo de 2 em 2) e agora vou testar com o fedavg (seleção aleatória) |||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base 
+➜ flwr run                
+Loading project configuration... 
+Success
+INFO :      Starting Flower ServerApp, config: num_rounds=3, no round_timeout
+INFO :      
+INFO :      [INIT]
+INFO :      Using initial global parameters provided by strategy
+INFO :      Starting evaluation of initial global parameters
+INFO :      Evaluation returned no results (`None`)
+INFO :      
+INFO :      [ROUND 1]
+INFO :      configure_fit: strategy sampled 6 clients (out of 6)
+(ClientAppActor pid=79449) /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future.
+(ClientAppActor pid=79449) For the old behavior, usually:
+(ClientAppActor pid=79449)     np.array(value).astype(dtype)
+(ClientAppActor pid=79449) will give the desired result (the cast overflows).
+(ClientAppActor pid=79449)   nparray = np.array(values, dtype=np_dt)
+INFO :      aggregate_fit: received 6 results and 0 failures
+WARNING :   No fit_metrics_aggregation_fn provided
+INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_evaluate: received 6 results and 0 failures
+INFO :      
+INFO :      [ROUND 2]
+INFO :      configure_fit: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_fit: received 6 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_evaluate: received 6 results and 0 failures
+INFO :      
+INFO :      [ROUND 3]
+INFO :      configure_fit: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_fit: received 6 results and 0 failures
+INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
+INFO :      aggregate_evaluate: received 6 results and 0 failures
+INFO :      
+INFO :      [SUMMARY]
+INFO :      Run finished 3 round(s) in 45.38s
+INFO :          History (loss, distributed):
+INFO :                  round 1: 1.7880625526110332
+INFO :                  round 2: 1.5473052461942036
+INFO :                  round 3: 1.4574004014333088
+INFO :          History (metrics, distributed, evaluate):
+INFO :          {'accuracy': [(1, 0.3927214543024699),
+INFO :                        (2, 0.45890821516513824),
+INFO :                        (3, 0.4853029449780782)]}
+INFO :      
+(ClientAppActor pid=79448) /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future. [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)
+(ClientAppActor pid=79448) For the old behavior, usually: [repeated 3x across cluster]
+(ClientAppActor pid=79448)     np.array(value).astype(dtype) [repeated 3x across cluster]
+(ClientAppActor pid=79448) will give the desired result (the cast overflows). [repeated 3x across cluster]
+(ClientAppActor pid=79448)   nparray = np.array(values, dtype=np_dt) [repeated 3x across cluster]
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base took 58,0s 
+➜ ls
+jeffersonmatheus plot_results.py  pyproject.toml   README.md
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base 
+➜ python plot_results.py
+
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base took 50,3s 
+➜ 

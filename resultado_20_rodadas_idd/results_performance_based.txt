@@ -1,0 +1,190 @@
+Loading project configuration... 
+Success
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=20, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[36m(ClientAppActor pid=56526)[0m /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future.
+[36m(ClientAppActor pid=56526)[0m For the old behavior, usually:
+[36m(ClientAppActor pid=56526)[0m     np.array(value).astype(dtype)
+[36m(ClientAppActor pid=56526)[0m will give the desired result (the cast overflows).
+[36m(ClientAppActor pid=56526)[0m   nparray = np.array(values, dtype=np_dt)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[36m(ClientAppActor pid=56523)[0m /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future.[32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(ClientAppActor pid=56523)[0m For the old behavior, usually:[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=56523)[0m     np.array(value).astype(dtype)[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=56523)[0m will give the desired result (the cast overflows).[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=56523)[0m   nparray = np.array(values, dtype=np_dt)[32m [repeated 2x across cluster][0m
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 20 round(s) in 231.43s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 1.6280288696289062
+[92mINFO [0m:      		round 2: 1.4409671902656556
+[92mINFO [0m:      		round 3: 1.3177889585494995
+[92mINFO [0m:      		round 4: 1.2406582236289978
+[92mINFO [0m:      		round 5: 1.1782088160514832
+[92mINFO [0m:      		round 6: 1.1387281894683838
+[92mINFO [0m:      		round 7: 1.0943661689758302
+[92mINFO [0m:      		round 8: 1.062249130010605
+[92mINFO [0m:      		round 9: 1.0246005296707152
+[92mINFO [0m:      		round 10: 1.02401260137558
+[92mINFO [0m:      		round 11: 1.0010136008262633
+[92mINFO [0m:      		round 12: 0.9639617025852203
+[92mINFO [0m:      		round 13: 0.9449001789093018
+[92mINFO [0m:      		round 14: 0.924569171667099
+[92mINFO [0m:      		round 15: 0.9022857844829559
+[92mINFO [0m:      		round 16: 0.903869915008545
+[92mINFO [0m:      		round 17: 0.88627108335495
+[92mINFO [0m:      		round 18: 0.878125113248825
+[92mINFO [0m:      		round 19: 0.9139438152313233
+[92mINFO [0m:      		round 20: 0.8548898458480835
+[92mINFO [0m:      	History (metrics, distributed, evaluate):
+[92mINFO [0m:      	{'accuracy': [(1, 0.43109999895095824),
+[92mINFO [0m:      	              (2, 0.48030000030994413),
+[92mINFO [0m:      	              (3, 0.5441000044345856),
+[92mINFO [0m:      	              (4, 0.5694000065326691),
+[92mINFO [0m:      	              (5, 0.5947999954223633),
+[92mINFO [0m:      	              (6, 0.6149999976158143),
+[92mINFO [0m:      	              (7, 0.6286999940872192),
+[92mINFO [0m:      	              (8, 0.6439999997615814),
+[92mINFO [0m:      	              (9, 0.6476999938488006),
+[92mINFO [0m:      	              (10, 0.6509999990463257),
+[92mINFO [0m:      	              (11, 0.6561000108718872),
+[92mINFO [0m:      	              (12, 0.6676999986171722),
+[92mINFO [0m:      	              (13, 0.6800999939441681),
+[92mINFO [0m:      	              (14, 0.6867000102996826),
+[92mINFO [0m:      	              (15, 0.6991999983787537),
+[92mINFO [0m:      	              (16, 0.689599996805191),
+[92mINFO [0m:      	              (17, 0.7017999947071075),
+[92mINFO [0m:      	              (18, 0.7049000084400177),
+[92mINFO [0m:      	              (19, 0.6908999919891358),
+[92mINFO [0m:      	              (20, 0.7124000072479248)]}
+[92mINFO [0m:      
+[36m(ClientAppActor pid=56524)[0m /Users/lima/faculdade/aprendizado_federado/flower/venv/lib/python3.10/site-packages/tensorflow/python/framework/tensor_util.py:522: DeprecationWarning: NumPy will stop allowing conversion of out-of-bound Python integers to integer arrays.  The conversion of 2147483648 to int32 will fail in the future.
+[36m(ClientAppActor pid=56524)[0m For the old behavior, usually:
+[36m(ClientAppActor pid=56524)[0m     np.array(value).astype(dtype)
+[36m(ClientAppActor pid=56524)[0m will give the desired result (the cast overflows).
+[36m(ClientAppActor pid=56524)[0m   nparray = np.array(values, dtype=np_dt)

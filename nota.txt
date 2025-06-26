@@ -1,0 +1,84 @@
+dia 14/04
+
+utilizando o flower para aprendizado federado
+    exemplo pratico
+        cliente
+        servidor
+        simulação
+
+    automação flower
+    conclusao
+
+Aprendizado colaborativo
+"cliente vai colaborar com o aprendizado do modelo"
+
+passos:
+    1. inicialização do modelo
+    2. treinamento local
+    3. compartilhamento 
+    4. agregação (FedAvg)
+    Repetir passos N vezes (até atingir a acurácia desejada)
+
+agregação costumizada
+configure_fit
+aggregate_fit
+configure_evaluete
+aggregate_evaluete
+
+fit -> treinamento com o modelo global e dados locais
+evaluete -> avaliacao com dados locais do cliente
+
+pyhton3 -m venv venv
+pip install flwr["simulation"]
+nome pra aplicacao
+nome de usuario
+
+ele apenas copiou e colou o arquivo do fedavg, trocou o nome e disse que podiamos implementar as alterações
+
+
+07/05/2025
+python3 -m venv venv (executei)
+source venv/bin/activate (ativando a venv) -> flower
+
+pip install --upgrade pip
+pip install flwr tensorflow matplotlib
+pip install scikit-learn
+pip freeze > requirements.txt
+
+flwr new
+cd jeffersonMatheus
+pip install -e .
+flwr run
+
+
+
+# atualmente eu tenho a simulação com o fedavg (dados aleatórios)
+# seleção no-iid e iid
+# simulação com round-robin (semi aleatória)
+
+# preciso de uma estratégia pra selecionar melhor meus clientes.
+
+
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base 
+➜ python comparacao_estrategias.py
+Executando experimento com FedAvg...
+Executando experimento com Performance-Based...
+
+Resultados:
+FedAvg - Accuracy Final: 0.6319
+Performance-Based - Accuracy Final: 0.5995
+
+Melhoria: -5.13%
+
+aprendizado_federado/flower/jeffersonmatheus is 📦 1.0.0 via 🐍 3.10.13 via flower via 🅒 base took 12m 34,7s 
+➜ python comparacao_estrategias.py
+Executando experimento com FedAvg...
+Executando experimento com Performance-Based...
+
+Resultados:
+FedAvg - Accuracy Final: 0.7121
+Performance-Based - Accuracy Final: 0.6909
+
+Melhoria: -2.98%
+
