@@ -1,1 +1,17 @@
+# Ambiente virtual
 venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração de IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Dados temporários
+*.log
+*.tmp
