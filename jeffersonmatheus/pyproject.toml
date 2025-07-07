@@ -24,7 +24,7 @@ serverapp = "jeffersonmatheus.server_app:app"
 clientapp = "jeffersonmatheus.client_app:app"
 
 [tool.flwr.app.config]
-num-server-rounds = 10
+num-server-rounds = 20
 local-epochs = 3
 batch-size = 32
 verbose = false
